@@ -76,6 +76,7 @@ const StoreContext = (props)=>{
 
                 if (data.success) {
                     setUserData(data.user)
+                    console.log(data.user);
                 } else {
                     toast.error(data.message)
                 }
