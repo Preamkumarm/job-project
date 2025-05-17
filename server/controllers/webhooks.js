@@ -18,39 +18,40 @@ export const clerkWebhooks = async (req,res) => {
 
         //get the data from the req.body
 
-        const { data, type} = req.body;
+        const { data, type } = req.body
 
         //type will store the different type of action when user update or create or delete the account clerk with the using help of svix
 
         switch (type) {
-            case "user.created": {
+            case 'user.created': {
                 //when user created then we will save the user data in our database
                 const userData = {
-                    _id: data.id,
-                    email: data.email_address[0].email_address,
-                    name: `${data.first_name} ${data.last_name}`,
+                    _id:data.id,
+                    email: data.email_addresses[0].email_address,
+                    name: data.first_name + " " + data.last_name,
                     image: data.image_url,
                     resume: ''
                 }
-                await UserModel.create(userData);
-                res.json({});
+                console.log(userData)
+                await UserModel.create(userData)
+                res.json({})
                 break;
             }
 
-            case "user.updated":{
+            case 'user.updated':{
                 const userData = {
-                    email: data.email_address[0].email_address,
+                    email: data.email_addresses[0].email_address,
                     name: data.first_name + " " + data.last_name,
                     image: data.image_url,
                 }
-                await UserModel.findByIdAndUpdate(data.id, userData);
-                res.json({});
+                await UserModel.findByIdAndUpdate(data.id, userData)
+                res.json({})
                 break;
             }
 
-            case "user.deleted":{
-                await UserModel.findByIdAndDelete(data.id);
-                res.json({});
+            case 'user.deleted':{
+                await UserModel.findByIdAndDelete(data.id)
+                res.json({})
                 break;
             }
             default:
