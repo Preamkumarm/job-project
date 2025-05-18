@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import  { useContext, useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { NameContext } from "../context/ArrContext"
 import { assets, JobCategories, jobData } from '../assets/assets';
@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { useAuth } from '@clerk/clerk-react';
-import { set } from 'mongoose';
+
 const ApplyJob = ({job}) => {
   
   const {id} = useParams();
