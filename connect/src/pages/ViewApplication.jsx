@@ -36,7 +36,7 @@ const ViewApplication = () => {
   const changeJobApplicationStatus = async (id, status) =>{
     try {
       
-      const {data} = await axios.post(backendUrl+'/api/company/chnage-status',
+      const {data} = await axios.post(backendUrl+'/api/company/change-status',
         {id, status},
         {headers:{token:companyToken}}
       )

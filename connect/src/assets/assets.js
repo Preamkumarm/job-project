@@ -34,7 +34,7 @@ import samsung_logo from './samsung_logo.png'
 import adobe_logo from './adobe_logo.png'
 import amazon_logo from './amazon_logo.png'
 import infosys_logo from './infosys_logo.png'
-import frame from './frame2.svg'
+import frame from './frame 3.svg'
 
 export const assets = {
     logo,
@@ -85,6 +85,7 @@ export const JobCategories = [
     "Marketing",
     "Cybersecurity",
     "Full Stack",
+    "Others"
 ]
 
 export const JobLocations = [
@@ -94,7 +95,8 @@ export const JobLocations = [
     "Mumbai",
     "California",
     "Chennai",
-    "New York"
+    "New York",
+    "Coimbatore",
 ]
 
 // Sample data for Manage Jobs Page
