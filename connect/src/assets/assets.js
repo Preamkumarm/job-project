@@ -34,6 +34,7 @@ import samsung_logo from './samsung_logo.png'
 import adobe_logo from './adobe_logo.png'
 import amazon_logo from './amazon_logo.png'
 import infosys_logo from './infosys_logo.png'
+import frame from './frame2.svg'
 
 export const assets = {
     logo,
@@ -71,7 +72,8 @@ export const assets = {
     samsung_logo,
     adobe_logo,
     amazon_logo,
-    infosys_logo
+    infosys_logo,
+    frame,
 }
 
 export const JobCategories = [

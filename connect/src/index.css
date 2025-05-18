@@ -27,54 +27,26 @@
     display: none;
   }
 
-  /* h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', 'Segoe UI', sans-serif;
-    font-weight: bold;
-    color: #1a202c;
-    margin-bottom: 0.5em;
-  }
-  
-  p {
-    font-family: 'Open Sans', 'Arial', sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #4a5568;
-    margin-bottom: 1em;
-  }
-  
-  a {
-    color: #3182ce;
-    text-decoration: underline;
-    transition: color 0.3s;
-  }
-  a:hover {
-    color: #2b6cb0;
-  }
-  
-  ul, ol {
-    padding-left: 2rem;
-    margin-bottom: 1em;
-  }
-  
-  li {
-    margin-bottom: 0.5em;
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  blockquote {
-    border-left: 4px solid #4299e1;
-    padding-left: 1em;
-    color: #2d3748;
-    font-style: italic;
-    margin: 1em 0;
-  }
-  
-  strong {
-    color: #2c5282;
-  }
-  
-  em {
-    font-style: italic;
-  }
-   */
+ .rich-text {font-size: 15px; color: #7A7B7D;}
+
+ .rich-text p  {margin-bottom: 16px; }
+
+ .rich-text h1 { font-size: 36px; font-weight: 800; color: #252525; margin:0 auto;}
+
+ .rich-text h2 { font-size: 22px; font-weight: 700; color: #252525; margin:0 auto;}
+
+ .rich-text h3 { font-size: 18px; font-weight: 600; color: #333333; margin:0 auto;}
+
+ .rich-text h4 { font-size: 16px; font-weight: 500; color: #444444; margin:0 auto;}
+
+ .rich-text h5 { font-size: 14px; font-weight: 400; color: #555555; margin:0 auto;}
+
+ .rich-text h6 { font-size: 12px; font-weight: 400; color: #666666; margin:0 auto;}
+
+ .rich-text strong { font-weight: 700; }
+
+ .rich-text ol { margin-left: 30px; list-style-type: decimal; }
+
+ .rich-text ul { margin-left: 30px; list-style-type: disc; }
+
+ .rich-text li { margin-bottom: 8px;}

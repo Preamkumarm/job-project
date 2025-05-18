@@ -12,7 +12,7 @@ export const getUserData = async(req,res) => {
     try {
         
         const user = await UserModel.findById(userId)
-        console.log(user, userId);
+        console.log(user);
 
         if(!user){
             return res.json({ success:false, message:'User not found'})
