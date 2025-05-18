@@ -7,7 +7,7 @@ const NameContext = createContext();
 
 const StoreContext = (props)=>{
 
-   const backendUrl = "http://localhost:5001";
+   const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
    const {user} = useUser()
    const {getToken} = useAuth()
