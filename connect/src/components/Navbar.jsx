@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div className="shadow py-4">
         <div className="container px-4 2xl:px-20 mx-auto flex justify-between items-center">
-        <img onClick={()=>navigate('/')} className="cursor-pointer w-40 h-12" src={assets.frame} alt=''/>
+        <img onClick={()=>navigate('/')} className="cursor-pointer w-60 h-8" src={assets.frame} alt=''/>
         {
             user ? 
             <div className="flex items-center gap-3">
