@@ -19,6 +19,7 @@ const RecruiterLogin = () => {
     const [images,setImages] = useState();
     const [enterValue,setEnterValue] = useState(false);
 
+    // Company register and
     const onLogin = async(e)=>{
         e.preventDefault();
         if (currState === "Sign Up"  && !enterValue) {

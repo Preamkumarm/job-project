@@ -28,7 +28,7 @@ const Dashboard = () => {
         {/* {Navbar for recuriter} */}
 <div className='shadow py-4'>
     <div className='px-5 flex justify-between items-center'>
-        <img onClick={e => navigate('/')} className='max-sm:w-32 cursor-pointer' src={assets.logo} alt=''/>
+        <img onClick={e => navigate('/')} className='max-sm:w-32 cursor-pointer w-60 h-8' src={assets.frame} alt=''/>
         {companyData && ( <div className='flex items-center gap-3'>    
             <p className='max-sm:hidden'>Welcome, {companyData.name}</p>
             <div className='relative group'>
